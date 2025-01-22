@@ -45,15 +45,24 @@ public class GuessGame {
            if (p1isRight || p2isRight || p3isRight)
            {
                System.out.println("We have a winner!");
-               System.out.println("Player one got it right? " + p1isRight);
-               System.out.println("Player two got it right? " + p2isRight);
-               System.out.println("Player three got it right? " + p3isRight);
+               if(p1isRight){
+                System.out.println("Player one got it right");
+               }
+               else if(p2isRight){
+                System.out.println("Player two got it right");
+               }
+               else{
+                System.out.println("Player three got it right");
+               }
                System.out.println("Game is over");
+               System.out.println("");
                break;
            }
            else
            {
+               System.out.println("No Player guessed it correct.");
                System.out.println("Players will have to try again.");
+               System.out.println("");
            }
        }
    }
